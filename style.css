@@ -1,0 +1,200 @@
+/* *************************DElete**************** */
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+/* *************************DElete**************** */
+
+
+* {
+    margin: 0;
+    paddding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 1em;
+}
+body {
+    font-size: 0.9375rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background-color:  hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+
+}
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+.container {
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 0.5em;
+
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h1.stat {
+    color:  hsla(0, 0%, 100%, 0.6);
+}
+
+h4 {
+    text-transform: uppercase;
+    color:hsla(0, 0%, 100%, 0.6);
+
+}
+
+p, h4 {
+    font-weight: 400;
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+            width: 22.333em;  
+            margin: 4em auto;
+    }    
+    h1 {
+        font-size: 1.9em;
+        padding: 0.2em 1em;
+    }
+    p {
+    font-size: 1.1em;
+    padding: 0 1em 1.5em 1em;
+    line-height: 1.4;
+    }
+    .img-container {
+        background-image: linear-gradient(hsla(277, 64%, 61%, 0.596),hsla(277, 64%, 61%, 0.596)),url(images/image-header-mobile.jpg);
+        width: 22.333em;
+        height: 16.390666666666668em;
+        background-size: contain;
+    }
+    h4 {
+        margin-top: -1.7em;
+    }
+    img {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .img-container {
+        /* background-image: linear-gradient(hsla(277, 64%, 61%, 0.596),hsla(277, 64%, 61%, 0.596)), url(images/image-header-desktop.jpg); */
+        /* height: 446px;
+        width: 540px;
+        background-size: contain; */
+        background-color: hsl(277, 62%, 40%);
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1200px;
+        margin: 150px auto;
+   
+    }
+    img {
+        opacity: 0.4;
+        object-fit: cover;
+    }
+    .content-container {
+        padding: 2em 4em 0 4em;
+        font-size: 1.3em;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .heading {
+        font-size: 2.3em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
